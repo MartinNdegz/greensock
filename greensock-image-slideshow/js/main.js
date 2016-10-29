@@ -8,14 +8,15 @@
 	    $slideNavPrevA = $('.slideNavPrev a'),
 	    $slideNavNextA = $('.slideNavNext a'),
 	    $hero = $('.hero');
-	    
+
 
 	function init(){
 
 		//hide all the slides apart from the active one
 		TweenLite.set($homeSlide.not($activeSlide), {autoAlpha: 0});
 
-
+       //disable arrow down on page load
+        TweenLite.set($slideNavPrev, {autoAlpha: 0.2});
 
 
 	}
