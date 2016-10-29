@@ -22,5 +22,22 @@
 	}
 		// run the init function
 	init();
+
+		// Go to next slide
+	function goToNextSlide(slideOut, slideIn){
+
+		
+	}
+
+		//Navigation Click - go to the next slide
+	$slideNavNext.click(function(e){
+		e.preventDefault();
+
+
+
+		goToNextSlide(slideOut, slideIn);
+
+	});
+
 	
 })(jQuery); 
